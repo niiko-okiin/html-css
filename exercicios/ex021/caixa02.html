@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            border-radius: 15px 2px;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            border-radius: 10px 2px;
+            margin: 10px auto 20px auto;
+            padding: 7px;
+            text-align: center;
+            width: 130px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.432);
+        }
+
+        h2 {
+            border-radius: 10px 2px;
+            background-color: rgb(161, 161, 161);
+            padding: 5px;
+            width: fit-content;
+        }
+
+        nav {
+            border-radius: 15px 2px;
+            background-color: rgb(121, 121, 121);
+            padding: 3px ;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.459);
+
+            /*
+            Ordem da shorthand do box-shadow: horizontal, vertical, borrar, espalhamento, cor
+            */
+        }  
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: auto 90px auto 90px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline crimson;
+        }
+        
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 2px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: justify;
+            border-radius:  15px 2px;
+        }
+
+        article > aside {
+            background-color: rgb(145, 145, 145);
+            text-align: right;
+            border-radius: 10px 2px;
+        }
+        
+        article > aside > p {
+            font-style: italic;
+            font-weight: 500;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Cultura</a>
+            <a href="#">Esportes</a>
+            <a href="#">Comida</a>
+            <a href="#">Jogos</a>
+            <a href="#">Notícias</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum ipsa quam voluptatum voluptatem non quisquam amet explicabo sunt doloremque officia dolore, autem suscipit ipsum maxime asperiores qui iste at!</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sapiente aliquid mollitia assumenda dolorem nemo fugiat id est. Voluptas accusamus ipsum natus necessitatibus. Totam sapiente qui repellat voluptatum maiores error!</p>
+                <aside>
+                    <p>Texto escrito por Nicholas Galvão Neves</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>
